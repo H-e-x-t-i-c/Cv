@@ -1,163 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cv</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-[#024950] text-white">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hammad Hasan - Frontend Developer</title>
 
-    <!--======================================================================================
-===================================== Hero Section =====================================-->
+        <!-- Load Tailwind CSS utilities. -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
 
-   <header class="w-full bg-[#AFDDE5] shadow-sm border-b-3 border-[#964734]">
-  <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-        <div class="w-10 h-10 bg-[#024950] rounded flex items-center justify-center text-[#AFDDE5] font-bold text-lg">
-           <a href="#home" class="text-[#AFDDE5]"> H </a></div>
-        <h1 class="text-2xl font-bold text-white-800">
-            <span class="text-[#024950]">HAMMAD</span> <span class="text-[#964734]">HASAN</span>
-        </h1>
-    </div>
-<!--== Menu bar ==-->
-    <ul class="hidden md:flex items-center gap-8 text-gray-600 font-medium">
-      <li><a href="#home" class="hover:text-[#024950]"><strong>Home</strong></a></li>
-      <li><a href="#about" class="hover:text-[#024950]"><strong>About</strong></a></li>
-      <li><a href="#skills" class="hover:text-[#024950]"><strong>Skills</strong></a></li>
-      <li><a href="#projects" class="hover:text-[#024950]"><strong>Projects</strong></a></li>
-    </ul>
-<!--== Let's Talk Button ==-->
-    <a><button class="bg-[#964734] text-[#AFDDE5] px-5 py-2 rounded-lg hover:bg-[#024950] transition">
-      Let's Talk
-    </button></a>
-  </nav>
-</header>
+    <body class="bg-[#024950] text-white">
 
-<!--======================================================================================
-===================================== Hero Section =====================================-->
+        <!-- Header: logo, navigation links, and contact button. -->
+        <header class="w-full bg-[#003135] shadow-sm border-b-4 border-[#964734]">
+            <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-<section id="home" class="bg-[#024950] min-h-[80vh] flex items-center">
+                <!-- Personal logo and name. -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-[#AFDDE5] rounded flex items-center justify-center text-[#024950] font-bold text-lg">
+                        <a href="#home">H</a>
+                    </div>
 
-<!--== left Side hero section -->
-  <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-70">
-    <div class="text-center md:text-left">
-      <p class="text-[#964734] font-semibold text-lg mb-3">
-        Hello, I'm
-      </p>
-      <h1 class="text-4xl md:text-6xl font-bold text-[#AFDDE5] mb-4">
-        Hammad Hasan
-      </h1>
-      <h2 class="text-2xl text-[#AFDDE5] font-semibold mb-5">
-        Frontend Developers
-      </h2>
-      <p class="text-[#AFDDE5] max-w-lg mb-8 leading-relaxed">
-        I create clean, modern and responsive websites.
-        I enjoy learning new technologies and building
-        creative digital experiences.
-      </p>
-<!--== Buttons ==-->
-      <div class="flex flex-wrap justify-center md:justify-start gap-4">
-        <a href="#contact" class="border-2 border-[#AFDDE5] bg-[#964734] text-[#AFDDE5] px-6 py-3 rounded-lg hover:bg-[#AFDDE5] hover:text-[#024950] transition">
-          Contact Me
-        </a>
-        <a href="cv.pdf" class="border-2 border-[#964734] text-[#964734] px-6 py-3 rounded-lg hover:bg-[#964734] hover:text-[#AFDDE5] transition">
-          Download CV
-        </a>
-      </div>
-    </div>
-<!--== Right Side hero section ==-->
-    <!-- Right Side: Profile Image -->
-<div class="flex justify-center md:justify-end">
-  <div class="relative">
-    <img src="Black-Tie Bokeh Portrait.png"alt="Hammad Hasan" class="w-64 h-80 md:w-80 md:h-[420px] object-cover object-center rounded-[40px] shadow-2xl border-4 border-[#964734]"/>
-  </div>
-</div>
-  </div>
-</section>
+                    <h1 class="text-2xl font-bold">
+                        <span class="text-[#AFDDE5]">HAMMAD</span>
+                        <span class="text-[#964734]">HASAN</span>
+                    </h1>
+                </div>
 
-<!--======================================================================================
-===================================== Card Section =====================================-->
+                <!-- Main navigation; hidden on small screens. -->
+                <ul class="hidden md:flex items-center gap-8 text-[#AFDDE5] font-medium">
+                    <li><a href="#home" class="hover:text-[#964734]"><strong>Home</strong></a></li>
+                    <li><a href="#about" class="hover:text-[#964734]"><strong>About</strong></a></li>
+                    <li><a href="#skills" class="hover:text-[#964734]"><strong>Skills</strong></a></li>
+                    <li><a href="#journey" class="hover:text-[#964734]"><strong>My Journey</strong></a></li>
+                </ul>
 
-<section id="cards" class="py-16 bg-[#003135] border-t-3 border-[#964734]">
-  
-  <!--== card 1 ==-->
+                <!-- Primary contact action. -->
+                <a href="#contact" class="bg-[#964734] text-[#AFDDE5] px-5 py-2 rounded-lg hover:bg-[#AFDDE5] hover:text-[#024950] transition">
+                    Let's Talk
+                </a>
+            </nav>
+        </header>
 
-  <div class="max-w-6xl mx-auto px-6">
-    <p class="text-[#964734] font-semibold text-lg mb-3">
-      What I Do
-    </p>
-    <h2 class="text-3xl font-bold text-[#AFDDE5] mb-8">My Creativity <span class="text-[#964734]">Toolkit</span></h2>
-    <p class="text-[#AFDDE5] max-w-lg mb-8 leading-relaxed">
-      A growing collection of skills and abilities that I'm developing through practice and experience.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">01 - DEVELOPMENT</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">HTML</h3>
-        <p class="text-[#024950]">
-          Creating semantic and well-structured markup.
-        </p>
-      </div>
+        <!-- Hero section: introduction, action buttons, and profile image. -->
+        <section id="home" class="bg-[#024950] min-h-[80vh] flex items-center">
+            <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
 
-<!--== card 2 ==-->
+                <!-- Introduction and calls to action. -->
+                <div id="about" class="text-center md:text-left">
+                    <p class="text-[#964734] font-semibold text-lg mb-3">
+                        Hello, I'm
+                    </p>
 
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">02 - STYLE</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">CSS</h3>
-        <p class="text-[#024950]">
-          Designing beautiful and responsive layouts.
-        </p>
-      </div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-[#AFDDE5] mb-4">
+                        Hammad Hasan
+                    </h1>
 
-<!--== card 3 ==-->
+                    <h2 class="text-2xl text-[#AFDDE5] font-semibold mb-5">
+                        Frontend Developer
+                    </h2>
 
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">03 - INTERACTION</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">JAVASCRIPT</h3>
-        <p class="text-[#024950]">
-          Exploring the power of JavaScript.
-        </p>
-      </div>
+                    <p class="text-[#AFDDE5] max-w-lg mb-8 leading-relaxed">
+                        I create clean, modern and responsive websites.
+                        I enjoy learning new technologies and building
+                        creative digital experiences.
+                    </p>
 
-<!--== card 4 ==-->
+                    <!-- Hero section buttons. -->
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#contact" class="border-2 border-[#AFDDE5] bg-[#964734] text-[#AFDDE5] px-6 py-3 rounded-lg hover:bg-[#AFDDE5] hover:text-[#024950] transition">
+                            Contact Me
+                        </a>
 
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">04 - FRAMEWORK</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">REACT</h3>
-        <p class="text-[#024950]">
-          Building dynamic and interactive user interfaces.
-        </p>
-      </div>
+                        <a href="image.png" class="border-2 border-[#964734] text-[#964734] px-6 py-3 rounded-lg hover:bg-[#964734] hover:text-[#AFDDE5] transition">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
 
-<!--== card 5 ==-->
+                <!-- Profile image. Keep the image file in the same folder as this HTML file. -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative">
+                        <img
+                            src="Black-Tie Bokeh Portrait.png"
+                            alt="Portrait of Hammad Hasan"
+                            class="w-64 h-80 md:w-80 md:h-[420px] object-cover object-center rounded-[40px] shadow-2xl border-4 border-[#964734]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">05 - THINKING</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">PROBLEM-SOLVING</h3>
-        <p class="text-[#024950]">
-          Analyzing problems and developing effective solutions.
-        </p>
-      </div>
+        <!-- Skills section: a responsive grid of development skills. -->
+        <section id="skills" class="py-16 bg-[#003135] border-t-4 border-[#964734]">
+            <div class="max-w-6xl mx-auto px-6">
+                <p class="text-[#964734] font-semibold text-lg mb-3">
+                    What I Do
+                </p>
 
-<!--== card 6 ==-->
-      <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
-        <p class="text-[#964734] font-semibold">06 - CREATIVITY</p>
-        <br>
-        <h3 class="text-xl font-bold text-[#024950] mb-4">CREATIVE THINKING</h3>
-        <p class="text-[#024950]">
-          Exploring ideas and possibilities.
-        </p>
-      </div>
+                <h2 class="text-3xl font-bold text-[#AFDDE5] mb-8">
+                    My Creativity <span class="text-[#964734]">Toolkit</span>
+                </h2>
 
-    </div>
-  </div>
-</section>
+                <p class="text-[#AFDDE5] max-w-lg mb-8 leading-relaxed">
+                    A growing collection of skills and abilities that I'm developing through practice and experience.
+                </p>
 
-</body>
-</html>
+                <!-- Skill cards are arranged in one column on mobile and three on desktop. -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Skill 01: HTML. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">01 - DEVELOPMENT</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">HTML</h3>
+                        <p class="text-[#024950]">Creating semantic and well-structured markup.</p>
+                    </div>
+
+                    <!-- Skill 02: CSS. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">02 - STYLE</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">CSS</h3>
+                        <p class="text-[#024950]">Designing beautiful and responsive layouts.</p>
+                    </div>
+
+                    <!-- Skill 03: JavaScript. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">03 - INTERACTION</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">JAVASCRIPT</h3>
+                        <p class="text-[#024950]">Exploring the power of JavaScript.</p>
+                    </div>
+
+                    <!-- Skill 04: React. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">04 - FRAMEWORK</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">REACT</h3>
+                        <p class="text-[#024950]">Building dynamic and interactive user interfaces.</p>
+                    </div>
+
+                    <!-- Skill 05: Problem-solving. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">05 - THINKING</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">PROBLEM-SOLVING</h3>
+                        <p class="text-[#024950]">Analyzing problems and developing effective solutions.</p>
+                    </div>
+
+                    <!-- Skill 06: Creative thinking. -->
+                    <div class="bg-[#AFDDE5] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">06 - CREATIVITY</p>
+                        <h3 class="text-xl font-bold text-[#024950] mb-4 mt-4">CREATIVE THINKING</h3>
+                        <p class="text-[#024950]">Exploring ideas and possibilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey section: current learning stage and future goals. -->
+        <section id="journey" class="py-16 bg-[#AFDDE5] border-t-4 border-[#964734]">
+            <div class="max-w-6xl mx-auto px-6">
+                <p class="text-[#964734] font-semibold text-lg mb-3">
+                    MY MINDSET
+                </p>
+
+                <h2 class="text-3xl font-bold text-[#024950] mb-8">
+                    ALWAYS LEARNING<br>
+                    <span class="text-[#964734]">ALWAYS EVOLVING</span>
+                </h2>
+
+                <!-- Two cards describe the present and the future. -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Current learning stage. -->
+                    <div class="bg-[#024950] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">MY PRESENT</p>
+
+                        <h3 class="text-xl font-bold text-[#AFDDE5] mb-4">
+                            Learning & Exploring
+                        </h3>
+
+                        <p class="text-[#AFDDE5]">
+                            Building a strong foundation in web development, exploring creative technologies and improving my abilities through continuous learning.
+                        </p>
+                    </div>
+
+                    <!-- Long-term professional goal. -->
+                    <div class="bg-[#024950] p-6 rounded-lg shadow-lg border-2 border-[#964734]">
+                        <p class="text-[#964734] font-semibold">MY VISION</p>
+
+                        <h3 class="text-xl font-bold text-[#AFDDE5] mb-4">
+                            Creating Something Meaningful
+                        </h3>
+
+                        <p class="text-[#AFDDE5]">
+                            My ambition is to become a skilled developer, create exceptional digital experiences and turn my ideas into reality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer/contact section: profile summary, quick links, and contact details. -->
+        <footer id="contact" class="bg-[#003135] border-t-4 border-[#964734] pt-16 pb-8">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Footer content is split into three responsive columns. -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                    <!-- Footer column 01: short profile. -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">
+                            <span class="text-[#AFDDE5]">HAMMAD</span>
+                            <span class="text-[#964734]">HASAN</span>
+                        </h2>
+
+                        <p class="text-[#AFDDE5] leading-relaxed">
+                            Frontend Developer. I create clean, modern and responsive websites and love turning ideas into real digital experiences.
+                        </p>
+                    </div>
+
+                    <!-- Footer column 02: page navigation. -->
+                    <div>
+                        <h3 class="text-lg font-bold text-[#AFDDE5] mb-4">
+                            Quick Links
+                        </h3>
+
+                        <ul class="space-y-2 text-[#AFDDE5]">
+                            <li><a href="#home" class="hover:text-[#964734]">Home</a></li>
+                            <li><a href="#about" class="hover:text-[#964734]">About</a></li>
+                            <li><a href="#skills" class="hover:text-[#964734]">Skills</a></li>
+                            <li><a href="#journey" class="hover:text-[#964734]">My Journey</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer column 03: email and social profiles. -->
+                    <div>
+                        <h3 class="text-lg font-bold text-[#AFDDE5] mb-4">
+                            Let's Talk
+                        </h3>
+
+                        <p class="text-[#AFDDE5] mb-2">
+                            Have a project or want to work together?
+                        </p>
+
+                        <a
+                            href="mailto:hammadhasan861@gmail.com"
+                            class="text-[#964734] font-semibold hover:text-[#AFDDE5] break-all"
+                        >
+                            hammadhasan861@gmail.com
+                        </a>
+
+                        <!-- Social profile links. Replace the LinkedIn placeholder when available. -->
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                href="https://github.com/H-e-x-t-i-c"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-[#964734] text-[#AFDDE5] px-4 py-2 rounded-lg hover:bg-[#AFDDE5] hover:text-[#024950] transition text-sm font-semibold"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                href="#"
+                                class="bg-[#AFDDE5] text-[#024950] px-4 py-2 rounded-lg hover:bg-[#964734] hover:text-[#AFDDE5] transition text-sm font-semibold"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright and site credit. -->
+                <div class="border-t border-[#AFDDE5]/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+                    <p class="text-[#AFDDE5] text-sm text-center md:text-left">
+                        © 2026 Hammad Hasan. All Rights Reserved.
+                    </p>
+
+                    <p class="text-[#AFDDE5] text-sm">
+                        Designed & Built by Hextic.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    </html>
